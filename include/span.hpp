@@ -202,7 +202,7 @@ public:
     return size() * sizeof(element_type);
   }
 
-  constexpr bool empty() const noexcept { return size_ == 0; }
+  [[nodiscard]] constexpr bool empty() const noexcept { return size_ == 0; }
 
   //---
 
