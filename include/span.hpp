@@ -190,7 +190,6 @@ public:
   //---
 
   constexpr reference operator[](index_type idx) const { return data_[idx]; }
-  constexpr reference operator()(index_type idx) const { return data_[idx]; }
 
   constexpr pointer data() const noexcept { return data_; }
 
